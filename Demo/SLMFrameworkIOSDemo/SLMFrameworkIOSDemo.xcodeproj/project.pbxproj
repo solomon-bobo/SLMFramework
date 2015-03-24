@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2E1677C1AC0FB6C00AE0A1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E1677B1AC0FB6C00AE0A1D /* main.m */; };
+		B2E1677F1AC0FB6C00AE0A1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E1677E1AC0FB6C00AE0A1D /* AppDelegate.m */; };
+		B2E167821AC0FB6C00AE0A1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E167811AC0FB6C00AE0A1D /* ViewController.m */; };
+		B2E167851AC0FB6C00AE0A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E167831AC0FB6C00AE0A1D /* Main.storyboard */; };
+		B2E167871AC0FB6C00AE0A1D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E167861AC0FB6C00AE0A1D /* Images.xcassets */; };
+		B2E1678A1AC0FB6C00AE0A1D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E167881AC0FB6C00AE0A1D /* LaunchScreen.xib */; };
+		B2E167961AC0FB6C00AE0A1D /* SLMFrameworkIOSDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E167951AC0FB6C00AE0A1D /* SLMFrameworkIOSDemoTests.m */; };
+		B2E167C51AC0FC1500AE0A1D /* NSArray+SLMFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E167A21AC0FC1500AE0A1D /* NSArray+SLMFramework.m */; };
+		B2E167C61AC0FC1500AE0A1D /* NSData+SLMFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E167A41AC0FC1500AE0A1D /* NSData+SLMFramework.m */; };
+		B2E167C71AC0FC1500AE0A1D /* NSDate+SLMFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E167A61AC0FC1500AE0A1D /* NSDate+SLMFramework.m */; };
+		B2E167C81AC0FC1500AE0A1D /* NSDictionary+SLMFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E167A81AC0FC1500AE0A1D /* NSDictionary+SLMFramework.m */; };
+		B2E167C91AC0FC1500AE0A1D /* NSNumber+SLMFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E167AA1AC0FC1500AE0A1D /* NSNumber+SLMFramework.m */; };
+		B2E167CA1AC0FC1500AE0A1D /* NSString+SLMFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E167AC1AC0FC1500AE0A1D /* NSString+SLMFramework.m */; };
+		B2E167CB1AC0FC1500AE0A1D /* SLMFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E167AF1AC0FC1500AE0A1D /* SLMFunctions.m */; };
+		B2E167CC1AC0FC1500AE0A1D /* SLMHttpRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E167B21AC0FC1500AE0A1D /* SLMHttpRequestOperation.m */; };
+		B2E167CD1AC0FC1500AE0A1D /* SLMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E167B61AC0FC1500AE0A1D /* SLMAlertView.m */; };
+		B2E167CE1AC0FC1500AE0A1D /* SLMImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E167B81AC0FC1500AE0A1D /* SLMImageView.m */; };
+		B2E167CF1AC0FC1500AE0A1D /* UIAlertView+SLMFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E167BA1AC0FC1500AE0A1D /* UIAlertView+SLMFramework.m */; };
+		B2E167D01AC0FC1500AE0A1D /* UIButton+SLMFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E167BC1AC0FC1500AE0A1D /* UIButton+SLMFramework.m */; };
+		B2E167D11AC0FC1500AE0A1D /* UIDevice+SLMFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E167BE1AC0FC1500AE0A1D /* UIDevice+SLMFramework.m */; };
+		B2E167D21AC0FC1500AE0A1D /* UIImage+SLMFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E167C01AC0FC1500AE0A1D /* UIImage+SLMFramework.m */; };
+		B2E167D31AC0FC1500AE0A1D /* UISearchBar+SLMFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E167C21AC0FC1500AE0A1D /* UISearchBar+SLMFramework.m */; };
+		B2E167D41AC0FC1500AE0A1D /* UIView+SLMFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E167C41AC0FC1500AE0A1D /* UIView+SLMFramework.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2E167901AC0FB6C00AE0A1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2E1676E1AC0FB6C00AE0A1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2E167751AC0FB6C00AE0A1D;
+			remoteInfo = SLMFrameworkIOSDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B2E167761AC0FB6C00AE0A1D /* SLMFrameworkIOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLMFrameworkIOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2E1677A1AC0FB6C00AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2E1677B1AC0FB6C00AE0A1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B2E1677D1AC0FB6C00AE0A1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B2E1677E1AC0FB6C00AE0A1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B2E167801AC0FB6C00AE0A1D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B2E167811AC0FB6C00AE0A1D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B2E167841AC0FB6C00AE0A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2E167861AC0FB6C00AE0A1D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B2E167891AC0FB6C00AE0A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B2E1678F1AC0FB6C00AE0A1D /* SLMFrameworkIOSDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLMFrameworkIOSDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2E167941AC0FB6C00AE0A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2E167951AC0FB6C00AE0A1D /* SLMFrameworkIOSDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLMFrameworkIOSDemoTests.m; sourceTree = "<group>"; };
+		B2E167A11AC0FC1500AE0A1D /* NSArray+SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SLMFramework.h"; sourceTree = "<group>"; };
+		B2E167A21AC0FC1500AE0A1D /* NSArray+SLMFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SLMFramework.m"; sourceTree = "<group>"; };
+		B2E167A31AC0FC1500AE0A1D /* NSData+SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SLMFramework.h"; sourceTree = "<group>"; };
+		B2E167A41AC0FC1500AE0A1D /* NSData+SLMFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SLMFramework.m"; sourceTree = "<group>"; };
+		B2E167A51AC0FC1500AE0A1D /* NSDate+SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SLMFramework.h"; sourceTree = "<group>"; };
+		B2E167A61AC0FC1500AE0A1D /* NSDate+SLMFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SLMFramework.m"; sourceTree = "<group>"; };
+		B2E167A71AC0FC1500AE0A1D /* NSDictionary+SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SLMFramework.h"; sourceTree = "<group>"; };
+		B2E167A81AC0FC1500AE0A1D /* NSDictionary+SLMFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SLMFramework.m"; sourceTree = "<group>"; };
+		B2E167A91AC0FC1500AE0A1D /* NSNumber+SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+SLMFramework.h"; sourceTree = "<group>"; };
+		B2E167AA1AC0FC1500AE0A1D /* NSNumber+SLMFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+SLMFramework.m"; sourceTree = "<group>"; };
+		B2E167AB1AC0FC1500AE0A1D /* NSString+SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SLMFramework.h"; sourceTree = "<group>"; };
+		B2E167AC1AC0FC1500AE0A1D /* NSString+SLMFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SLMFramework.m"; sourceTree = "<group>"; };
+		B2E167AE1AC0FC1500AE0A1D /* SLMFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLMFunctions.h; sourceTree = "<group>"; };
+		B2E167AF1AC0FC1500AE0A1D /* SLMFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLMFunctions.m; sourceTree = "<group>"; };
+		B2E167B11AC0FC1500AE0A1D /* SLMHttpRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLMHttpRequestOperation.h; sourceTree = "<group>"; };
+		B2E167B21AC0FC1500AE0A1D /* SLMHttpRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLMHttpRequestOperation.m; sourceTree = "<group>"; };
+		B2E167B31AC0FC1500AE0A1D /* SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLMFramework.h; sourceTree = "<group>"; };
+		B2E167B51AC0FC1500AE0A1D /* SLMAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLMAlertView.h; sourceTree = "<group>"; };
+		B2E167B61AC0FC1500AE0A1D /* SLMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLMAlertView.m; sourceTree = "<group>"; };
+		B2E167B71AC0FC1500AE0A1D /* SLMImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLMImageView.h; sourceTree = "<group>"; };
+		B2E167B81AC0FC1500AE0A1D /* SLMImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLMImageView.m; sourceTree = "<group>"; };
+		B2E167B91AC0FC1500AE0A1D /* UIAlertView+SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+SLMFramework.h"; sourceTree = "<group>"; };
+		B2E167BA1AC0FC1500AE0A1D /* UIAlertView+SLMFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+SLMFramework.m"; sourceTree = "<group>"; };
+		B2E167BB1AC0FC1500AE0A1D /* UIButton+SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SLMFramework.h"; sourceTree = "<group>"; };
+		B2E167BC1AC0FC1500AE0A1D /* UIButton+SLMFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SLMFramework.m"; sourceTree = "<group>"; };
+		B2E167BD1AC0FC1500AE0A1D /* UIDevice+SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+SLMFramework.h"; sourceTree = "<group>"; };
+		B2E167BE1AC0FC1500AE0A1D /* UIDevice+SLMFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+SLMFramework.m"; sourceTree = "<group>"; };
+		B2E167BF1AC0FC1500AE0A1D /* UIImage+SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SLMFramework.h"; sourceTree = "<group>"; };
+		B2E167C01AC0FC1500AE0A1D /* UIImage+SLMFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SLMFramework.m"; sourceTree = "<group>"; };
+		B2E167C11AC0FC1500AE0A1D /* UISearchBar+SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+SLMFramework.h"; sourceTree = "<group>"; };
+		B2E167C21AC0FC1500AE0A1D /* UISearchBar+SLMFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+SLMFramework.m"; sourceTree = "<group>"; };
+		B2E167C31AC0FC1500AE0A1D /* UIView+SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SLMFramework.h"; sourceTree = "<group>"; };
+		B2E167C41AC0FC1500AE0A1D /* UIView+SLMFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SLMFramework.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2E167731AC0FB6C00AE0A1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E1678C1AC0FB6C00AE0A1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2E1676D1AC0FB6C00AE0A1D = {
+			isa = PBXGroup;
+			children = (
+				B2E167781AC0FB6C00AE0A1D /* SLMFrameworkIOSDemo */,
+				B2E167921AC0FB6C00AE0A1D /* SLMFrameworkIOSDemoTests */,
+				B2E167771AC0FB6C00AE0A1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2E167771AC0FB6C00AE0A1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2E167761AC0FB6C00AE0A1D /* SLMFrameworkIOSDemo.app */,
+				B2E1678F1AC0FB6C00AE0A1D /* SLMFrameworkIOSDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2E167781AC0FB6C00AE0A1D /* SLMFrameworkIOSDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B2E1679F1AC0FC1500AE0A1D /* SLMFramework */,
+				B2E1677D1AC0FB6C00AE0A1D /* AppDelegate.h */,
+				B2E1677E1AC0FB6C00AE0A1D /* AppDelegate.m */,
+				B2E167801AC0FB6C00AE0A1D /* ViewController.h */,
+				B2E167811AC0FB6C00AE0A1D /* ViewController.m */,
+				B2E167831AC0FB6C00AE0A1D /* Main.storyboard */,
+				B2E167861AC0FB6C00AE0A1D /* Images.xcassets */,
+				B2E167881AC0FB6C00AE0A1D /* LaunchScreen.xib */,
+				B2E167791AC0FB6C00AE0A1D /* Supporting Files */,
+			);
+			path = SLMFrameworkIOSDemo;
+			sourceTree = "<group>";
+		};
+		B2E167791AC0FB6C00AE0A1D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2E1677A1AC0FB6C00AE0A1D /* Info.plist */,
+				B2E1677B1AC0FB6C00AE0A1D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2E167921AC0FB6C00AE0A1D /* SLMFrameworkIOSDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2E167951AC0FB6C00AE0A1D /* SLMFrameworkIOSDemoTests.m */,
+				B2E167931AC0FB6C00AE0A1D /* Supporting Files */,
+			);
+			path = SLMFrameworkIOSDemoTests;
+			sourceTree = "<group>";
+		};
+		B2E167931AC0FB6C00AE0A1D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2E167941AC0FB6C00AE0A1D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2E1679F1AC0FC1500AE0A1D /* SLMFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B2E167A01AC0FC1500AE0A1D /* Foundation+SLMFramework */,
+				B2E167AD1AC0FC1500AE0A1D /* FunctionsAndMethods */,
+				B2E167B01AC0FC1500AE0A1D /* RequestAndResponse */,
+				B2E167B31AC0FC1500AE0A1D /* SLMFramework.h */,
+				B2E167B41AC0FC1500AE0A1D /* UIKit+SLMFramework */,
+			);
+			name = SLMFramework;
+			path = ../../../SLMFramework;
+			sourceTree = "<group>";
+		};
+		B2E167A01AC0FC1500AE0A1D /* Foundation+SLMFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B2E167A11AC0FC1500AE0A1D /* NSArray+SLMFramework.h */,
+				B2E167A21AC0FC1500AE0A1D /* NSArray+SLMFramework.m */,
+				B2E167A31AC0FC1500AE0A1D /* NSData+SLMFramework.h */,
+				B2E167A41AC0FC1500AE0A1D /* NSData+SLMFramework.m */,
+				B2E167A51AC0FC1500AE0A1D /* NSDate+SLMFramework.h */,
+				B2E167A61AC0FC1500AE0A1D /* NSDate+SLMFramework.m */,
+				B2E167A71AC0FC1500AE0A1D /* NSDictionary+SLMFramework.h */,
+				B2E167A81AC0FC1500AE0A1D /* NSDictionary+SLMFramework.m */,
+				B2E167A91AC0FC1500AE0A1D /* NSNumber+SLMFramework.h */,
+				B2E167AA1AC0FC1500AE0A1D /* NSNumber+SLMFramework.m */,
+				B2E167AB1AC0FC1500AE0A1D /* NSString+SLMFramework.h */,
+				B2E167AC1AC0FC1500AE0A1D /* NSString+SLMFramework.m */,
+			);
+			path = "Foundation+SLMFramework";
+			sourceTree = "<group>";
+		};
+		B2E167AD1AC0FC1500AE0A1D /* FunctionsAndMethods */ = {
+			isa = PBXGroup;
+			children = (
+				B2E167AE1AC0FC1500AE0A1D /* SLMFunctions.h */,
+				B2E167AF1AC0FC1500AE0A1D /* SLMFunctions.m */,
+			);
+			path = FunctionsAndMethods;
+			sourceTree = "<group>";
+		};
+		B2E167B01AC0FC1500AE0A1D /* RequestAndResponse */ = {
+			isa = PBXGroup;
+			children = (
+				B2E167B11AC0FC1500AE0A1D /* SLMHttpRequestOperation.h */,
+				B2E167B21AC0FC1500AE0A1D /* SLMHttpRequestOperation.m */,
+			);
+			path = RequestAndResponse;
+			sourceTree = "<group>";
+		};
+		B2E167B41AC0FC1500AE0A1D /* UIKit+SLMFramework */ = {
+			isa = PBXGroup;
+			children = (
+				B2E167B51AC0FC1500AE0A1D /* SLMAlertView.h */,
+				B2E167B61AC0FC1500AE0A1D /* SLMAlertView.m */,
+				B2E167B71AC0FC1500AE0A1D /* SLMImageView.h */,
+				B2E167B81AC0FC1500AE0A1D /* SLMImageView.m */,
+				B2E167B91AC0FC1500AE0A1D /* UIAlertView+SLMFramework.h */,
+				B2E167BA1AC0FC1500AE0A1D /* UIAlertView+SLMFramework.m */,
+				B2E167BB1AC0FC1500AE0A1D /* UIButton+SLMFramework.h */,
+				B2E167BC1AC0FC1500AE0A1D /* UIButton+SLMFramework.m */,
+				B2E167BD1AC0FC1500AE0A1D /* UIDevice+SLMFramework.h */,
+				B2E167BE1AC0FC1500AE0A1D /* UIDevice+SLMFramework.m */,
+				B2E167BF1AC0FC1500AE0A1D /* UIImage+SLMFramework.h */,
+				B2E167C01AC0FC1500AE0A1D /* UIImage+SLMFramework.m */,
+				B2E167C11AC0FC1500AE0A1D /* UISearchBar+SLMFramework.h */,
+				B2E167C21AC0FC1500AE0A1D /* UISearchBar+SLMFramework.m */,
+				B2E167C31AC0FC1500AE0A1D /* UIView+SLMFramework.h */,
+				B2E167C41AC0FC1500AE0A1D /* UIView+SLMFramework.m */,
+			);
+			path = "UIKit+SLMFramework";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2E167751AC0FB6C00AE0A1D /* SLMFrameworkIOSDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2E167991AC0FB6C00AE0A1D /* Build configuration list for PBXNativeTarget "SLMFrameworkIOSDemo" */;
+			buildPhases = (
+				B2E167721AC0FB6C00AE0A1D /* Sources */,
+				B2E167731AC0FB6C00AE0A1D /* Frameworks */,
+				B2E167741AC0FB6C00AE0A1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SLMFrameworkIOSDemo;
+			productName = SLMFrameworkIOSDemo;
+			productReference = B2E167761AC0FB6C00AE0A1D /* SLMFrameworkIOSDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2E1678E1AC0FB6C00AE0A1D /* SLMFrameworkIOSDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2E1679C1AC0FB6C00AE0A1D /* Build configuration list for PBXNativeTarget "SLMFrameworkIOSDemoTests" */;
+			buildPhases = (
+				B2E1678B1AC0FB6C00AE0A1D /* Sources */,
+				B2E1678C1AC0FB6C00AE0A1D /* Frameworks */,
+				B2E1678D1AC0FB6C00AE0A1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2E167911AC0FB6C00AE0A1D /* PBXTargetDependency */,
+			);
+			name = SLMFrameworkIOSDemoTests;
+			productName = SLMFrameworkIOSDemoTests;
+			productReference = B2E1678F1AC0FB6C00AE0A1D /* SLMFrameworkIOSDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2E1676E1AC0FB6C00AE0A1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = solomon;
+				TargetAttributes = {
+					B2E167751AC0FB6C00AE0A1D = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					B2E1678E1AC0FB6C00AE0A1D = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = B2E167751AC0FB6C00AE0A1D;
+					};
+				};
+			};
+			buildConfigurationList = B2E167711AC0FB6C00AE0A1D /* Build configuration list for PBXProject "SLMFrameworkIOSDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2E1676D1AC0FB6C00AE0A1D;
+			productRefGroup = B2E167771AC0FB6C00AE0A1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2E167751AC0FB6C00AE0A1D /* SLMFrameworkIOSDemo */,
+				B2E1678E1AC0FB6C00AE0A1D /* SLMFrameworkIOSDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2E167741AC0FB6C00AE0A1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E167851AC0FB6C00AE0A1D /* Main.storyboard in Resources */,
+				B2E1678A1AC0FB6C00AE0A1D /* LaunchScreen.xib in Resources */,
+				B2E167871AC0FB6C00AE0A1D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E1678D1AC0FB6C00AE0A1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2E167721AC0FB6C00AE0A1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E167C81AC0FC1500AE0A1D /* NSDictionary+SLMFramework.m in Sources */,
+				B2E167C91AC0FC1500AE0A1D /* NSNumber+SLMFramework.m in Sources */,
+				B2E167821AC0FB6C00AE0A1D /* ViewController.m in Sources */,
+				B2E167CC1AC0FC1500AE0A1D /* SLMHttpRequestOperation.m in Sources */,
+				B2E167D21AC0FC1500AE0A1D /* UIImage+SLMFramework.m in Sources */,
+				B2E167CD1AC0FC1500AE0A1D /* SLMAlertView.m in Sources */,
+				B2E167D11AC0FC1500AE0A1D /* UIDevice+SLMFramework.m in Sources */,
+				B2E1677F1AC0FB6C00AE0A1D /* AppDelegate.m in Sources */,
+				B2E167CA1AC0FC1500AE0A1D /* NSString+SLMFramework.m in Sources */,
+				B2E167C71AC0FC1500AE0A1D /* NSDate+SLMFramework.m in Sources */,
+				B2E167C61AC0FC1500AE0A1D /* NSData+SLMFramework.m in Sources */,
+				B2E167D41AC0FC1500AE0A1D /* UIView+SLMFramework.m in Sources */,
+				B2E167D31AC0FC1500AE0A1D /* UISearchBar+SLMFramework.m in Sources */,
+				B2E167CF1AC0FC1500AE0A1D /* UIAlertView+SLMFramework.m in Sources */,
+				B2E167C51AC0FC1500AE0A1D /* NSArray+SLMFramework.m in Sources */,
+				B2E167CB1AC0FC1500AE0A1D /* SLMFunctions.m in Sources */,
+				B2E1677C1AC0FB6C00AE0A1D /* main.m in Sources */,
+				B2E167D01AC0FC1500AE0A1D /* UIButton+SLMFramework.m in Sources */,
+				B2E167CE1AC0FC1500AE0A1D /* SLMImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E1678B1AC0FB6C00AE0A1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E167961AC0FB6C00AE0A1D /* SLMFrameworkIOSDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2E167911AC0FB6C00AE0A1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2E167751AC0FB6C00AE0A1D /* SLMFrameworkIOSDemo */;
+			targetProxy = B2E167901AC0FB6C00AE0A1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B2E167831AC0FB6C00AE0A1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2E167841AC0FB6C00AE0A1D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2E167881AC0FB6C00AE0A1D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2E167891AC0FB6C00AE0A1D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2E167971AC0FB6C00AE0A1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B2E167981AC0FB6C00AE0A1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2E1679A1AC0FB6C00AE0A1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SLMFrameworkIOSDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B2E1679B1AC0FB6C00AE0A1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SLMFrameworkIOSDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B2E1679D1AC0FB6C00AE0A1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SLMFrameworkIOSDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SLMFrameworkIOSDemo.app/SLMFrameworkIOSDemo";
+			};
+			name = Debug;
+		};
+		B2E1679E1AC0FB6C00AE0A1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SLMFrameworkIOSDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SLMFrameworkIOSDemo.app/SLMFrameworkIOSDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2E167711AC0FB6C00AE0A1D /* Build configuration list for PBXProject "SLMFrameworkIOSDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2E167971AC0FB6C00AE0A1D /* Debug */,
+				B2E167981AC0FB6C00AE0A1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2E167991AC0FB6C00AE0A1D /* Build configuration list for PBXNativeTarget "SLMFrameworkIOSDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2E1679A1AC0FB6C00AE0A1D /* Debug */,
+				B2E1679B1AC0FB6C00AE0A1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B2E1679C1AC0FB6C00AE0A1D /* Build configuration list for PBXNativeTarget "SLMFrameworkIOSDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2E1679D1AC0FB6C00AE0A1D /* Debug */,
+				B2E1679E1AC0FB6C00AE0A1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2E1676E1AC0FB6C00AE0A1D /* Project object */;
+}
