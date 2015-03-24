@@ -5,7 +5,6 @@
 
 - (void)slm_setCancelButtonTitle:(NSString *)title
 {
-    //修改search bar cancel button
     UIButton *cancelButton = nil;
     
     if (slm_iOS7OrLater()) {
@@ -25,7 +24,7 @@
     }
     if (cancelButton){
         [cancelButton.superview sendSubviewToBack:cancelButton];
-        [cancelButton setTitle:@"取消" forState:UIControlStateNormal];
+        [cancelButton setTitle:title forState:UIControlStateNormal];
     }
     
 //    if (slm_iOS8OrLater()) {

@@ -1,5 +1,5 @@
 #import "SLMAlertView.h"
-
+#import "SLMFunctions.h"
 @interface SLMAlertView () <UIAlertViewDelegate>
 
 @property (nonatomic, copy) void (^block)(NSInteger index);
@@ -19,7 +19,7 @@
 + (void)showMessage:(NSString *)message buttonTitles:(NSArray *)buttonTitles clickedAtIndex:(void (^)(NSInteger index))block
 {
     SLMAlertView *alertView = [[SLMAlertView alloc] init];
-    [alertView setTitle:NSLocalizedString(@"温馨提示", @"温馨提示")];
+    [alertView setTitle:NSLocalizedString(slm_bundleName(), slm_bundleName())];
     [alertView setMessage:message];
     [alertView setDelegate:alertView];
     for (NSString *buttonTitle in buttonTitles) {
@@ -35,7 +35,7 @@
 + (void)showMessage:(NSString *)message title:(NSString *)title buttonTitles:(NSArray *)buttonTitles clickedAtIndex:(void (^)(NSInteger index))block
 {
     SLMAlertView *alertView = [[SLMAlertView alloc] init];
-    [alertView setTitle:NSLocalizedString(@"温馨提示", @"温馨提示")];
+    [alertView setTitle:NSLocalizedString(slm_bundleName(), slm_bundleName())];
     [alertView setMessage:message];
     [alertView setDelegate:alertView];
     for (NSString *buttonTitle in buttonTitles) {

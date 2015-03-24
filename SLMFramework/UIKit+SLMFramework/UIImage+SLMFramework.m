@@ -8,42 +8,51 @@
     CGImageAlphaInfo alphaInfo = CGImageGetAlphaInfo(imageRef);
     CGColorSpaceRef colorSpaceInfo = CGColorSpaceCreateDeviceRGB();
     
-    if (alphaInfo == kCGImageAlphaNone)
+    if (alphaInfo == kCGImageAlphaNone) {
         alphaInfo = kCGImageAlphaNoneSkipLast;
+    }
     
     CGFloat width, height;
     CGFloat imageWidth = self.size.width;
     CGFloat imageHeight = self.size.height;
     
-    if ((imageWidth > imageHeight ? imageWidth : imageHeight) > size)
-    {
-        if (imageWidth > imageHeight)
-        {
+    if ((imageWidth > imageHeight ? imageWidth : imageHeight) > size) {
+        if (imageWidth > imageHeight) {
             width = size;
             height = size * imageHeight / imageWidth;
         }
-        else
-        {
+        else {
             height = size;
             width = size * imageWidth / imageHeight;
         }
     }
-    else
-    {
+    else {
         width = imageWidth;
         height = imageHeight;
     }
     
     CGContextRef bitmap;
     if (self.imageOrientation == UIImageOrientationUp | self.imageOrientation == UIImageOrientationDown) {
-        bitmap = CGBitmapContextCreate(NULL, width, height, CGImageGetBitsPerComponent(imageRef), CGImageGetBytesPerRow(imageRef), colorSpaceInfo, (CGBitmapInfo)alphaInfo);
+        bitmap = CGBitmapContextCreate(NULL,
+                                       width,
+                                       height,
+                                       CGImageGetBitsPerComponent(imageRef),
+                                       CGImageGetBytesPerRow(imageRef),
+                                       colorSpaceInfo,
+                                       (CGBitmapInfo)alphaInfo);
     }
     else {
         CGFloat tmp = width;
         width = height;
         height = tmp;
         
-        bitmap = CGBitmapContextCreate(NULL, height, width, CGImageGetBitsPerComponent(imageRef), CGImageGetBytesPerRow(imageRef), colorSpaceInfo, (CGBitmapInfo)alphaInfo);
+        bitmap = CGBitmapContextCreate(NULL,
+                                       height,
+                                       width,
+                                       CGImageGetBitsPerComponent(imageRef),
+                                       CGImageGetBytesPerRow(imageRef),
+                                       colorSpaceInfo,
+                                       (CGBitmapInfo)alphaInfo);
     }
     
     if (self.imageOrientation == UIImageOrientationLeft) {

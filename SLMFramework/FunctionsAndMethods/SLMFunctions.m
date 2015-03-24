@@ -46,25 +46,42 @@ UIImage *slm_image(NSString *imageName)
 UIImage *slm_large_image(NSString *imageName)
 {
     NSString *suffix = @"png";
-    if ([imageName hasSuffix:@"png"]) {
+    if ([imageName hasSuffix:@".png"]) {
         imageName = [imageName substringToIndex:imageName.length - 4];
     }
-    else if ([imageName hasSuffix:@"jpg"]) {
+    else if ([imageName hasSuffix:@".jpg"]) {
         imageName = [imageName substringToIndex:imageName.length - 4];
         suffix = @"jpg";
     }
     NSBundle *bundle = [NSBundle mainBundle];
     NSString *path = [bundle pathForResource:imageName ofType:suffix];
     UIImage *image = [[UIImage alloc] initWithContentsOfFile:path];
-    return SLMAutoRelease(image);
+#if __has_feature(objc_arc)
+    return image;
+#else
+    return [image autorelease];
+#endif
 }
 
 /*
- 如果在iPhone4上，icon.png为40*40像素，那么imageSize为40*40，imageScale为1.0，screenScale为2.0
- 如果在iPhone4上，icon@2x.png为40*40像素，那么imageSize为20*20，imageScale为2.0，screenScale为2.0
- 如果在iPhone6+上，icon.png为60*60像素，那么imageSize为60*60，imageScale为1.0，screenScale为3.0
- 如果在iPhone6+上，icon@3x.png为60*60像素，那么imageSize为20*20，imageScale为3.0，screenScale为3.0
- 以image的高度宽度中间的1*1进行resize。
+ if the device is iPhone4, assuming one picture named "icon.png",
+ and it's real pixel size is 40*40pixels,
+ then imageSize is 40*40, imageScale is 1.0, screenScale is 2.0.
+ 
+ if the device is iPhone4, assuming one picture named "icon@2x.png",
+ and it's real pixel size is 40*40pixels,
+ then imageSize is 20*20, imageScale is 2.0, screenScale is 2.0.
+ 
+ if the device is iPhone6+, assuming one picture named "icon.png",
+ and it's real pixel size is 60*60pixels,
+ then imageSize is 60*60, imageScale is 1.0, screenScale is 3.0.
+ 
+ if the device is iPhone6+, assuming one picture named "icon@3x.png",
+ and it's real pixel size is 60*60pixels,
+ then imageSize is 20*20, imageScale is 3.0, screenScale is 3.0.
+
+ so this function uses the 1*1pixel of the image's center,
+ to resize and return a new image.
  */
 UIImage *slm_resizeImage(NSString *imageName)
 {
@@ -78,13 +95,16 @@ UIImage *slm_resizeImage(NSString *imageName)
 
 void slm_alert(NSString *message)
 {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"温馨提示", @"温馨提示")
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(slm_bundleName(), slm_bundleName())
                                                         message:message
                                                        delegate:nil
-                                              cancelButtonTitle:NSLocalizedString(@"确定", @"确定")
+                                              cancelButtonTitle:NSLocalizedString(@"OK", @"OK")
                                               otherButtonTitles:nil];
     [alertView show];
-    SLMReleaseSafely(alertView);
+#if !__has_feature(objc_arc)
+    [alertView release];
+    alertView = nil;
+#endif
 }
 
 NSString *slm_UUIDString()

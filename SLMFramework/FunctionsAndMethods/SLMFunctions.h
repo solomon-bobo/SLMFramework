@@ -32,6 +32,7 @@ static inline BOOL slm_iOS8OrLater();
 static inline BOOL slm_isiPhone5();
 static inline BOOL slm_isiPhone6();
 static inline BOOL slm_isiPhone6Plus();
+
 //common app frame size
 static inline CGFloat slm_appFrameWidth();
 static inline CGFloat slm_appFrameHeight();
@@ -40,6 +41,11 @@ static inline CGFloat slm_appFrameHeight();
 #define SLM_Method_Name             (NSStringFromSelector(_cmd))
 #define SLM_File_Name               (slm_fileNameWithNoExtension(__FILE__))
 extern NSString *slm_fileNameWithNoExtension(char *filePath);
+
+//bundle name && so on
+static inline NSString *slm_bundleName();
+static inline NSString *slm_bundleVersion();
+static inline NSString *slm_bundleIdentifier();
 
 //easy way to load image
 extern UIImage *slm_image(NSString *imageName);
@@ -112,6 +118,21 @@ CGFloat slm_appFrameHeight()
     return slm_iOS7OrLater() ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] applicationFrame].size.height;
 }
 
+NSString *slm_bundleName()
+{
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleNameKey];
+}
+
+NSString *slm_bundleVersion()
+{
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
+}
+
+NSString *slm_bundleIdentifier()
+{
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleIdentifierKey];
+}
+
 UIColor *slm_rgbColor(float red, float green, float blue)
 {
     return [UIColor colorWithRed:red / 255.0 green:green / 255.0 blue:blue / 255.0 alpha:1];
@@ -119,18 +140,19 @@ UIColor *slm_rgbColor(float red, float green, float blue)
 
 NSString *slm_documentsPath()
 {
+    //because in simulator, the correct library path is the first one, so we use "objectAtIndex:0" instead of "lastObject"
     return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSAllDomainsMask, YES) objectAtIndex:0];
 }
 
 NSString *slm_libraryPath()
 {
-    //because in simulator, the correct library path is the first one
+    //same as above
     return [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSAllDomainsMask, YES) objectAtIndex:0];
 }
 
 NSString *slm_cachesPath()
 {
-    //because in simulator, the correct caches path is the first one
+    //same as above
     return [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSAllDomainsMask, YES) objectAtIndex:0];
 }
 

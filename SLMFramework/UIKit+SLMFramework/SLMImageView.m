@@ -83,13 +83,10 @@
     
     BOOL isDirectory;
     BOOL isExist = [[NSFileManager defaultManager] fileExistsAtPath:pathname isDirectory:&isDirectory];
-    if (!isExist || (isExist && !isDirectory))
-    {
+    if (!isExist || (isExist && !isDirectory)) {
         NSError *error = nil;
         [[NSFileManager defaultManager] createDirectoryAtPath:pathname withIntermediateDirectories:YES attributes:nil error:&error];
-        
-        if (error)
-        {
+        if (error) {
             
         }
     }
@@ -100,8 +97,7 @@
 - (NSString *)cachedFileNameForKey:(NSString *)key
 {
     const char *str = [key UTF8String];
-    if (str == NULL)
-    {
+    if (str == NULL) {
         str = "";
     }
     unsigned char r[CC_MD5_DIGEST_LENGTH];

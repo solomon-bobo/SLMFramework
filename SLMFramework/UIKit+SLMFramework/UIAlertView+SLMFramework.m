@@ -1,4 +1,5 @@
 #import "UIAlertView+SLMFramework.h"
+#import "SLMFunctions.h"
 #import <objc/runtime.h>
 
 static char blockKey;
@@ -10,7 +11,7 @@ typedef void (^SLMAlertViewBlock)(NSInteger index);
 + (void)slm_showMessage:(NSString *)message buttonTitles:(NSArray *)buttonTitles clickedAtIndex:(void (^)(NSInteger index))block
 {
     UIAlertView *alertView = [[UIAlertView alloc] init];
-    [alertView setTitle:NSLocalizedString(@"温馨提示", @"温馨提示")];
+    [alertView setTitle:NSLocalizedString(slm_bundleName(), slm_bundleName())];
     [alertView setMessage:message];
     [alertView setDelegate:alertView];
     for (NSString *buttonTitle in buttonTitles) {
@@ -26,7 +27,7 @@ typedef void (^SLMAlertViewBlock)(NSInteger index);
 + (void)slm_showMessage:(NSString *)message title:(NSString *)title buttonTitles:(NSArray *)buttonTitles clickedAtIndex:(void (^)(NSInteger index))block
 {
     UIAlertView *alertView = [[UIAlertView alloc] init];
-    [alertView setTitle:NSLocalizedString(@"温馨提示", @"温馨提示")];
+    [alertView setTitle:NSLocalizedString(slm_bundleName(), slm_bundleName())];
     [alertView setMessage:message];
     [alertView setDelegate:alertView];
     for (NSString *buttonTitle in buttonTitles) {

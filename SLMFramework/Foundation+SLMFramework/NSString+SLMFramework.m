@@ -70,9 +70,12 @@
         return nil;
     }
     
-    NSDateFormatter *formatter = SLMAllocAndAutoReleaseObject(NSDateFormatter);
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     NSDate *date = [formatter dateFromString:self];
+#if !__has_feature(objc_arc)
+    [formatter release];
+#endif
     return date;
 }
 

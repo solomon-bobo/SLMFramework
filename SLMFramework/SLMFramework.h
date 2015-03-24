@@ -5,7 +5,6 @@
 #import "NSDate+SLMFramework.h"
 #import "NSDictionary+SLMFramework.h"
 #import "NSString+SLMFramework.h"
-#import "NSNumber+SLMFramework.h"
 #import "SLMHttpRequestOperation.h"
 
 #import "SLMAlertView.h"

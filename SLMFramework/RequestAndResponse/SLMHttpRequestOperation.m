@@ -137,8 +137,12 @@ static NSThread *slm_httpRequestOperationDefaultThread = nil;
 
 - (void)start
 {
+    /*
+     if the second parameter is main thread, it is also worked,
+     but we still use a new thread to deal with http request.
+     */
     [self performSelector:@selector(operationDidStart)
-                 onThread:slm_httpRequestOperationDefaultThread     /* 放在main thread依然可行，不过我们还是专门起一个线程来处理http请求。 */
+                 onThread:slm_httpRequestOperationDefaultThread
                withObject:nil
             waitUntilDone:NO];
     self.state = SLMHttpRequestOperationStateExcuting;
