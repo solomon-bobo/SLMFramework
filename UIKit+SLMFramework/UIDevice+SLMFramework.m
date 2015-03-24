@@ -1,11 +1,3 @@
-//
-//  UIDevice+SLMFramework.m
-//  FICorpUMSApp
-//
-//  Created by flaginfo－mac4 on 14-9-25.
-//  Copyright (c) 2014年 flaginfo. All rights reserved.
-//
-
 #import "UIDevice+SLMFramework.h"
 #import "NSString+SLMFramework.h"
 #include <sys/socket.h> // Per msqr

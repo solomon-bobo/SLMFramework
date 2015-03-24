@@ -1,11 +1,3 @@
-//
-//  UISearchBar+SLMFramework.m
-//  FICorpUMSApp
-//
-//  Created by flaginfo－mac4 on 14-10-28.
-//  Copyright (c) 2014年 flaginfo. All rights reserved.
-//
-
 #import "UISearchBar+SLMFramework.h"
 #import "SLMFunctions.h"
 

@@ -1,11 +1,3 @@
-//
-//  SLMAlertView.m
-//  SLMDemo
-//
-//  Created by flaginfo－mac4 on 14-7-21.
-//  Copyright (c) 2014年 flaginfo. All rights reserved.
-//
-
 #import "SLMAlertView.h"
 
 @interface SLMAlertView () <UIAlertViewDelegate>

@@ -1,11 +1,3 @@
-//
-//  UIView+SLMFramework.m
-//  FICorpUMSApp
-//
-//  Created by flaginfo－mac4 on 14-9-25.
-//  Copyright (c) 2014年 flaginfo. All rights reserved.
-//
-
 #import "UIView+SLMFramework.h"
 
 @implementation UIView (SLMFramework)

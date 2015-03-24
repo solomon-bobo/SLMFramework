@@ -1,11 +1,3 @@
-//
-//  UIAlertView+SLMFramework.m
-//  SLMDemo
-//
-//  Created by flaginfo－mac4 on 14-7-21.
-//  Copyright (c) 2014年 flaginfo. All rights reserved.
-//
-
 #import "UIAlertView+SLMFramework.h"
 #import <objc/runtime.h>
 

@@ -1,11 +1,3 @@
-//
-//  UIImage+SLMFramework.m
-//  SLMDemo
-//
-//  Created by flaginfo－mac4 on 14-7-25.
-//  Copyright (c) 2014年 flaginfo. All rights reserved.
-//
-
 #import "UIImage+SLMFramework.h"
 
 @implementation UIImage (SLMFramework)
