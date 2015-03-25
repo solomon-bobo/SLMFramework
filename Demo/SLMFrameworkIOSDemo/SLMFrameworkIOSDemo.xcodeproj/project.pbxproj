@@ -71,11 +71,11 @@
 		B2E167B21AC0FC1500AE0A1D /* SLMHttpRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLMHttpRequestOperation.m; sourceTree = "<group>"; };
 		B2E167B31AC0FC1500AE0A1D /* SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLMFramework.h; sourceTree = "<group>"; };
 		B2E167B51AC0FC1500AE0A1D /* SLMAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLMAlertView.h; sourceTree = "<group>"; };
-		B2E167B61AC0FC1500AE0A1D /* SLMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SLMAlertView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B2E167B61AC0FC1500AE0A1D /* SLMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SLMAlertView.m; sourceTree = "<group>"; };
 		B2E167B71AC0FC1500AE0A1D /* SLMImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLMImageView.h; sourceTree = "<group>"; };
 		B2E167B81AC0FC1500AE0A1D /* SLMImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLMImageView.m; sourceTree = "<group>"; };
 		B2E167B91AC0FC1500AE0A1D /* UIAlertView+SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+SLMFramework.h"; sourceTree = "<group>"; };
-		B2E167BA1AC0FC1500AE0A1D /* UIAlertView+SLMFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "UIAlertView+SLMFramework.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B2E167BA1AC0FC1500AE0A1D /* UIAlertView+SLMFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "UIAlertView+SLMFramework.m"; sourceTree = "<group>"; };
 		B2E167BB1AC0FC1500AE0A1D /* UIButton+SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SLMFramework.h"; sourceTree = "<group>"; };
 		B2E167BC1AC0FC1500AE0A1D /* UIButton+SLMFramework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SLMFramework.m"; sourceTree = "<group>"; };
 		B2E167BD1AC0FC1500AE0A1D /* UIDevice+SLMFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+SLMFramework.h"; sourceTree = "<group>"; };

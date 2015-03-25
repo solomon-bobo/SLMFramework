@@ -5,9 +5,9 @@
 - (void)slm_shake;
 
 @property (nonatomic, assign) CGFloat slm_left;
-@property (nonatomic, assign,readonly) CGFloat slm_right;
+@property (nonatomic, assign, readonly) CGFloat slm_right;
 @property (nonatomic, assign) CGFloat slm_top;
-@property (nonatomic, assign,readonly)CGFloat slm_bottom;
+@property (nonatomic, assign, readonly)CGFloat slm_bottom;
 @property (nonatomic, assign) CGFloat slm_width;
 @property (nonatomic, assign) CGFloat slm_height;
 @property (nonatomic, assign) CGPoint slm_origin;

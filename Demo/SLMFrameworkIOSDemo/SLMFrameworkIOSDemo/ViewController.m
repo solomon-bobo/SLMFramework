@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SLMFramework.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *jsonString = @"{\"key\":\"value\",\"key1\":null}";
+    
+    NSDictionary *dictionary = [jsonString slm_JSONValue];
+    
+    SLMLogObject(dictionary);
 }
 
 - (void)didReceiveMemoryWarning {

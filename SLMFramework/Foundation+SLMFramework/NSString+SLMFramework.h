@@ -16,4 +16,10 @@
 
 - (int)slm_chineseLength;
 
+/*
+ if self using underline naming, such as "user_id",
+ then this method returns "userId" which using dump naming.
+ */
+- (NSString *)slm_underlineToDump;
+
 @end

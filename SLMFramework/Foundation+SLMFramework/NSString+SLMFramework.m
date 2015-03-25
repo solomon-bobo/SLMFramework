@@ -65,8 +65,7 @@
 
 - (NSDate *)slm_date
 {
-    if (self.length <= 0)
-    {
+    if (self.length <= 0) {
         return nil;
     }
     
@@ -135,6 +134,38 @@
         }
     }
     return (int)(strlength + 1) / 2;
+}
+
+- (NSString *)slm_underlineToDump
+{
+    const char *src = [self UTF8String];
+    unsigned long len = strlen(src);
+    char *desc = (char *)malloc(sizeof(char) * len);
+    memset(desc, 0, sizeof(char) * len);
+    BOOL flag = NO;
+    char *temp = (char *)desc;
+    char c;
+    while ((c = *src++) != '\0') {
+        if (c == '_') {
+            flag = YES;
+            continue;
+        }
+        if (flag && (c > 'a') && (c < 'z')) {
+            *temp++ = c - 32;
+        }
+        else {
+            *temp++ = c;
+        }
+        flag = NO;
+    }
+    NSString *result = [[NSString alloc] initWithCString:desc
+                                                encoding:NSUTF8StringEncoding];
+    free(desc);
+#if __has_feature(objc_arc)
+    return result;
+#else
+    return [result autorelease];
+#endif
 }
 
 @end

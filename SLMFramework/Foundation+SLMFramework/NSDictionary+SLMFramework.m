@@ -1,4 +1,5 @@
 #import "NSDictionary+SLMFramework.h"
+#import <objc/runtime.h>
 
 @implementation NSDictionary (SLMFramework)
 
@@ -43,6 +44,29 @@
         [result setValue:copyObject forKey:key];
     }
     return result;
+}
+
+- (id)slm_ObjectWithClass:(Class)cls
+{
+    id obj = [[cls alloc] init];
+    unsigned int count = 0;
+    objc_property_t *list = class_copyPropertyList(cls, &count);
+    int i;
+    for (i = 0; i < count; i++) {
+        objc_property_t property = list[i];
+        const char *cName = property_getName(property);
+//        const char *cAttr = property_getAttributes(property);
+        NSString *name = [[NSString alloc] initWithCString:cName
+                                                  encoding:NSUTF8StringEncoding];
+        id value = self[name];
+        if (value) {
+            [obj setValue:value forKey:name];
+        }
+#if !__has_feature(objc_arc)
+        [name release];
+#endif
+    }
+    return obj;
 }
 
 @end

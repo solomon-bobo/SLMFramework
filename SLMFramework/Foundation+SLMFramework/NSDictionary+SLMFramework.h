@@ -6,4 +6,6 @@
 
 - (NSMutableDictionary *)slm_mutableDeepCopy;
 
+- (id)slm_ObjectWithClass:(Class)cls;
+
 @end

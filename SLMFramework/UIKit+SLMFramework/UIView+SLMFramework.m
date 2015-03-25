@@ -5,8 +5,8 @@
 - (void)slm_shake
 {
     CGFloat t = 4;
-    CGAffineTransform translateRight  =CGAffineTransformTranslate(CGAffineTransformIdentity, t, 0.0);
-    CGAffineTransform translateLeft =CGAffineTransformTranslate(CGAffineTransformIdentity, -t, 0.0);
+    CGAffineTransform translateRight = CGAffineTransformTranslate(CGAffineTransformIdentity, t, 0.0);
+    CGAffineTransform translateLeft = CGAffineTransformTranslate(CGAffineTransformIdentity, -t, 0.0);
     
     self.transform = translateLeft;
     
